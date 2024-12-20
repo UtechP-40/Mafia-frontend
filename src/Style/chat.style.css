@@ -1,0 +1,96 @@
+.chat {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.chatItems {
+    flex-grow: 1;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    margin-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+    scroll-behavior: smooth; /* Smooth scrolling when chats are added */
+}
+
+.chatItems::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatItems::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+}
+
+.chatItems::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.chatInput {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.chatInp {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    outline: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chatInp::placeholder {
+    color: #555;
+    font-style: italic;
+}
+
+form {
+    width: inherit;
+}
+
+.button-6 {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button-6:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.button-6:active {
+    background: #3e8e41;
+}
+
+.landing {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
